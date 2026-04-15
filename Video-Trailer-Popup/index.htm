@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video-trailer-popup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://www.premiumbeat.com/blog/wp-content/uploads/2019/05/cinematic-cover.jpg"
+        alt="img"
+      />
+      <h1>Movie Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iste
+        necessitatibus porro explicabo illo dolorum dolores cupiditate non modi
+        quasi nobis, earum ab, autem esse vero sapiente minus vel! Provident?
+      </p>
+      <button id="btn">Watch now</button>
+    </div>
+
+    <!--Video Trailer part-->
+    <div class="video-trailer active">
+      <video src="video.mp4" controls="true" class="video"></video>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!--Js start from here-->
+    <script src="script.js"></script>
+  </body>
+</html>

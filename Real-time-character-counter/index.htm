@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>real-time-character-counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Real-time character Counter</h2>
+      <textarea
+        maxlength="100"
+        name="input-box"
+        id="input"
+        placeholder="Write your text here..."
+      ></textarea>
+      <div class="result">
+        <p>Total character: <span id="totalCh">0</span></p>
+        <p>Remaining: <span id="remaining">100</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

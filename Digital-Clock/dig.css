@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.clock {
+    border: .5px solid white;
+    padding: 40px 60px;
+    font-size: 60px;
+    border-color: #555;
+    border-radius: 9px;
+}
+
+.clock span {
+    font-size: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.clock span::after {
+    content: "";
+    left: 10px;
+    position: absolute;
+    bottom: -20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(68, 190, 255);
+
+
+}
+
+#hrs::after {
+    content: 'hours';
+}
+
+#min::after {
+    content: 'mins';
+}
+
+#sec::after {
+    content: 'secs';
+}
