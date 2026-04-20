@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6666df;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #7b7bda;
+    height: 300px;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10xp 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.from {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.from input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.from label {
+    font-size: 1.2rem;
+}
+
+.from select {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Exchange To start from here */
+
+.To {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.To input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.to label {
+    font-size: 1.2rem;
+}
+
+
+.To select {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#exchange-Rate {
+    text-align: center;
+    margin-top: 40px;
+}

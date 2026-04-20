@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency - converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currecny Converter</h1>
+      <div class="from">
+        <label for="from">From:</label>
+        <select id="Exchange-From">
+          <option value="USD">USD</option>
+          <option value="INR">INR</option>
+          <option value="BDT">BDT</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <!-- input field FROM -->
+        <input
+          type="number"
+          min="0"
+          id="exchangeFrom"
+          placeholder="Exchange currency"
+        />
+      </div>
+
+      <div class="To">
+        <label for="To">TO:</label>
+        <select id="Exchange-To">
+          <option value="USD">USD</option>
+          <option value="INR">INR</option>
+          <option value="BDT" selected>BDT</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+        </select>
+
+        <!-- input filed To -->
+        <input type="number" id="exchangeTo" disabled />
+      </div>
+
+      <!-- LIVE EXCHANGE  -->
+      <p id="exchange-Rate">1 USD = 122.94 BDT</p>
+    </div>
+
+    <!-- js code link -->
+    <script src="app.js"></script>
+  </body>
+</html>
