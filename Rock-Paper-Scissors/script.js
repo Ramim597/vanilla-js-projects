@@ -23,6 +23,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
 let computerMove = "";
 
+// it will create random move for computer
 function pickComputerMove() {
   let randomNum = Math.random();
   if (randomNum >= 0 && randomNum < 1 / 3) {
@@ -34,8 +35,32 @@ function pickComputerMove() {
   }
 }
 
+pickComputerMove();
+
+// it will create random user move
+let randomUserMove = "";
+function pickUserMove() {
+  let randomNum = Math.random();
+  if (randomNum >= 0 && randomNum < 1 / 3) {
+    return "paper";
+  } else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
+    return "rock";
+  } else if (randomNum >= 2 / 3 && randomNum < 1) {
+    return "scissors";
+  }
+}
+pickUserMove();
+
+function autoPlay() {
+  setInterval(function () {
+    let randomUserMove = pickUserMove();
+    getResult(randomUserMove);
+  }, 1000);
+}
+
 // result start from here
 let result = "";
+
 function getResult(userMove) {
   if (userMove === "rock") {
     if (computerMove === "rock") {
@@ -63,7 +88,7 @@ function getResult(userMove) {
     } else if (computerMove === "paper") {
       result = "You win.";
     } else if (computerMove === "scissors") {
-      result = "Tie";
+      result = "Ties";
     }
   }
 

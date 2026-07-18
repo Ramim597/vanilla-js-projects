@@ -37,7 +37,8 @@ body {
     width: 50px;
 }
 
-.reset-btn {
+.reset-btn,
+.auto-play {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
