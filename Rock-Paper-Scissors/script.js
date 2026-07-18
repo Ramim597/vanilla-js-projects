@@ -51,11 +51,19 @@ function pickUserMove() {
 }
 pickUserMove();
 
+let isAutoPlaying = false;
+let clearIntervalId;
+
 function autoPlay() {
-  setInterval(function () {
-    let randomUserMove = pickUserMove();
-    getResult(randomUserMove);
-  }, 1000);
+  if (!isAutoPlaying) {
+    clearIntervalId = setInterval(function () {
+      let randomUserMove = pickUserMove();
+      getResult(randomUserMove);
+    }, 1000);
+    isAutoPlaying = true;
+  } else {
+    clearInterval(clearIntervalId);
+  }
 }
 
 // result start from here
