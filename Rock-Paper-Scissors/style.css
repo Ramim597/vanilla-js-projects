@@ -1,0 +1,63 @@
+body {
+    margin-left: 40px;
+    padding: 0;
+    background: #191919;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.circle-btn {
+    background-color: #191919;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 3px solid white;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rock-img {
+    height: 50px;
+    width: 50px;
+}
+
+.paper-img {
+    height: 50px;
+    width: 50px;
+}
+
+.scissors-img {
+    height: 50px;
+    width: 50px;
+}
+
+.reset-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 25px;
+}
+
+.result-rock {
+    height: 50px;
+    width: 50px;
+}
+
+.computerMove {
+    color: green;
+}
+
+.playerMove {
+    color: red;
+}
