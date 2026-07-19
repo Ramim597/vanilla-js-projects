@@ -14,12 +14,12 @@ let todoListArray = [];
 function renderTodo() {
   let todoListHTML = "";
 
-  for (let i = 0; i < todoListArray.length; i++) {
-    const todoList = todoListArray[i];
+  todoListArray.forEach(function (value, index) {
+    const todoList = value;
     todoListHTML += `<div>${todoList.name}</div> <div> ${todoList.dueDate} </div> 
-          <button class="delete-btn" onclick="todoListArray.splice(${i}, 1); renderTodo()
+          <button class="delete-btn" onclick="todoListArray.splice(${index}, 1); renderTodo()
             ">Delete</button>`;
-  }
+  });
 
   todoListItem.innerHTML = todoListHTML;
 }
