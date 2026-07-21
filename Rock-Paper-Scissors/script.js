@@ -4,16 +4,51 @@ let resultEl = document.querySelector(".result");
 let winEl = document.querySelector(".win");
 let losesEl = document.querySelector(".loses");
 let tiesEl = document.querySelector(".ties");
+let jsRock = document.querySelector(".js-rock");
+let jsPaper = document.querySelector(".js-paper");
+let jsScissors = document.querySelector(".js-scissors");
 let computerMoveEl = document.querySelector(".computerMove");
 function resetScore() {
-  Wins = 0;
-  loses = 0;
-  Ties = 0;
+  score.Wins = 0;
+  score.loses = 0;
+  score.Ties = 0;
   winEl.innerHTML = 0;
   losesEl.innerHTML = 0;
   tiesEl.innerHTML = 0;
   localStorage.removeItem("score");
 }
+
+// it will run the event CLICK
+jsRock.addEventListener("click", () => {
+  pickComputerMove();
+  getResult("rock");
+});
+
+jsPaper.addEventListener("click", () => {
+  pickComputerMove();
+  getResult("paper");
+});
+
+jsScissors.addEventListener("click", () => {
+  pickComputerMove();
+  getResult("scissors");
+});
+
+/* event keydown user type (r) play Rock  press (p == paper )
+press (s== scissors) */
+
+document.body.addEventListener("keydown", (event) => {
+  if (event.key === "r") {
+    pickComputerMove();
+    getResult("rock");
+  } else if (event.key === "p") {
+    pickComputerMove();
+    getResult("paper");
+  } else if (event.key === "s") {
+    pickComputerMove();
+    getResult("scissors");
+  }
+});
 
 let score = JSON.parse(localStorage.getItem("score")) || {
   Wins: 0,
