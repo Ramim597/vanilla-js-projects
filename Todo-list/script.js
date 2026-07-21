@@ -9,6 +9,10 @@ function keyPress() {
   }
 }
 
+addBtn.addEventListener("click", () => {
+  addTodo();
+});
+
 let todoListArray = [];
 
 function renderTodo() {
@@ -33,5 +37,6 @@ function addTodo() {
     dueDate,
   });
   todoInput.value = "";
+  dueDateInput.value = "";
   renderTodo();
 }
